@@ -15,7 +15,10 @@ export default () => {
       },
     });
 
-    history.listen(onParentNavigate);
+    history.listen((location) => {
+      console.log(location);
+      onParentNavigate(location);
+    });
   }, []);
   return <div ref={ref} />;
 };

@@ -9,6 +9,7 @@ const generateClassName = createGenerateClassName({ productionPrefix: 'au' });
 function App({ history, onSignIn }) {
   return (
     <div>
+      <h1>Hola</h1>
       <StylesProvider generateClassName={generateClassName}>
         <Router history={history}>
           <Switch>
